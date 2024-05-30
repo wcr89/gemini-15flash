@@ -48,7 +48,7 @@ model = genai.GenerativeModel(
 # Function to clear chat history
 def clear_history():
     st.session_state["messages"] = [
-        {"role": "model", "content": "ผมเป็น chatbot ตอบคำถามได้ทุกเรื่อง"}
+        {"role": "model", "content": "หนูเป็น Chatbot ตอบคำถามได้ทุกเรื่อง"}
     ]
     st.experimental_rerun()  # Rerun the script to refresh the page
 
@@ -65,7 +65,7 @@ if "messages" not in st.session_state:
     st.session_state["messages"] = [
         {
             "role": "model",
-            "content": "ผมเป็น chatbot ของ SCG Home ตอบคำถามได้ทุกเรื่องเกี่ยวกับความรู้ที่มีครับ",
+            "content": "หนูเป็น Chatbot ของ SCG Home ตอบคำถามได้ทุกเรื่องเกี่ยวกับความรู้ที่มีค่ะ",
         }
     ]
 
