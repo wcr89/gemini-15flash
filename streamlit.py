@@ -64,7 +64,7 @@ model = genai.GenerativeModel(
 และในกรณีที่แสดงผลเกี่ยวกับการติดต่อ SCG คุณจะแสดงผลออกมาในรูปแบบดังต่อไปนี้
 
 สอบถามรายละเอียดเพิ่มเติมได้ที่ :
-โฟแำินนา: SCGHomeOfficial > https://www.facebook.com/SCGHomeOfficial
+Facebook: SCGHomeOfficial > https://www.facebook.com/SCGHomeOfficial
 Line: @scghome > https://line.me/R/ti/p/@scghome
 """,
 )
