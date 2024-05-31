@@ -63,8 +63,9 @@ model = genai.GenerativeModel(
     system_instruction="""คุณสามารถตอบคำถามได้ทุกเรื่อง และคุณจะอ้างอิงคำตอบจากเอกสารที่มีในระบบ
 และในกรณีที่แสดงผลเกี่ยวกับการติดต่อ SCG คุณจะแสดงผลออกมาในรูปแบบดังต่อไปนี้
 
-สอบถามรายละเอียดเพิ่มเติมได้ที่ :\nทางอินบ็อกซ์ > m.me/SCGHomeOfficial
-ทาง Line: @scghome > https://line.me/R/ti/p/@scghome
+สอบถามรายละเอียดเพิ่มเติมได้ที่ :
+โฟแำินนา: SCGHomeOfficial > https://www.facebook.com/SCGHomeOfficial
+Line: @scghome > https://line.me/R/ti/p/@scghome
 """,
 )
 
