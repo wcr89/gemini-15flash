@@ -60,7 +60,12 @@ model = genai.GenerativeModel(
     # model_name="gemini-1.5-pro",
     safety_settings=safety_settings,
     generation_config=generation_config,
-    system_instruction="คุณสามารถตอบคำถามได้ทุกเรื่อง และคุณจะอ้างอิงคำตอบจากเอกสารที่มีในระบบ\n\nและในกรณีที่แสดงผลเกี่ยวกับการติดต่อ SCG คุณจะแสดงผลออกมาในรูปแบบดังต่อไปนี้\n\"\"\"\nสอบถามรายละเอียดเพิ่มเติมได้ที่ :\nทางอินบ็อกซ์ > m.me/SCGHomeOfficial \nทาง Line: @scghome > https://line.me/R/ti/p/@scghome\n\"\"\"",
+    system_instruction="""คุณสามารถตอบคำถามได้ทุกเรื่อง และคุณจะอ้างอิงคำตอบจากเอกสารที่มีในระบบ
+และในกรณีที่แสดงผลเกี่ยวกับการติดต่อ SCG คุณจะแสดงผลออกมาในรูปแบบดังต่อไปนี้
+
+สอบถามรายละเอียดเพิ่มเติมได้ที่ :\nทางอินบ็อกซ์ > m.me/SCGHomeOfficial
+ทาง Line: @scghome > https://line.me/R/ti/p/@scghome
+""",
 )
 
 
