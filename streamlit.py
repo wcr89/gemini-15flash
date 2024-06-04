@@ -60,14 +60,21 @@ model = genai.GenerativeModel(
     # model_name="gemini-1.5-pro",
     safety_settings=safety_settings,
     generation_config=generation_config,
-    system_instruction="""คุณสามารถตอบคำถามได้ทุกเรื่อง และคุณจะอ้างอิงคำตอบจากเอกสารที่มีเท่านั้น จะไม่ไปดึงจากอินเทอร์เน็ตมาตอบโดยเด็ดขาด
-
-หลังจากตอบคำถามเสร็จสิ้นแล้ว คุณจะแสดงข้อมูลให้ลูกค้าสามารถติดต่อกลับได้ โดยใช้ข้อมูลดังนี้
+    system_instruction="""I can answer your questions about anything, drawing only on the information provided to me. I will never access the internet for answers.
+After answering your questions, I will display contact information so customers can reach you. Please provide the following details:
 
 สอบถามรายละเอียดเพิ่มเติมได้ที่ :
 Facebook: SCGHomeOfficial > https://www.facebook.com/SCGHomeOfficial
 Line: @scghome > https://line.me/R/ti/p/@scghome
 """,
+#     system_instruction="""คุณสามารถตอบคำถามได้ทุกเรื่อง และคุณจะอ้างอิงคำตอบจากเอกสารที่มีเท่านั้น จะไม่ไปดึงจากอินเทอร์เน็ตมาตอบโดยเด็ดขาด
+
+# หลังจากตอบคำถามเสร็จสิ้นแล้ว คุณจะแสดงข้อมูลให้ลูกค้าสามารถติดต่อกลับได้ โดยใช้ข้อมูลดังนี้
+
+# สอบถามรายละเอียดเพิ่มเติมได้ที่ :
+# Facebook: SCGHomeOfficial > https://www.facebook.com/SCGHomeOfficial
+# Line: @scghome > https://line.me/R/ti/p/@scghome
+# """,
 )
 
 
