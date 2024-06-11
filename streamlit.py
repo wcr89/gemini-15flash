@@ -94,14 +94,16 @@ with st.sidebar:
     if st.button("Clear History"):
         clear_history()
 
-st.title("💬 Chatbot for SCG Home")
+# st.title("💬 Chatbot for SCG Home")
+st.title("💬 Assistant Chatbot")
 
 # Initialize messages if not present in session state
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
         {
             "role": "model",
-            "content": "หนูเป็น Chatbot ของ SCG Home ตอบคำถามได้ทุกเรื่องเกี่ยวกับความรู้ที่มีค่ะ",
+            # "content": "หนูเป็น Chatbot ของ SCG Home ตอบคำถามได้ทุกเรื่องเกี่ยวกับความรู้ที่มีค่ะ",
+            "content": "สวัสดีค่ะ หนูเป็น Chatbot สามารถช่วยตอบคำถามได้ทุกเรื่องเกี่ยวกับความรู้ที่มีค่ะ",
         }
     ]
 
