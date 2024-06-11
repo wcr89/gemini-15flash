@@ -73,6 +73,10 @@ model = genai.GenerativeModel(
     สอบถามรายละเอียดเพิ่มเติมได้ที่ :
     Facebook: SCGHomeOfficial > https://www.facebook.com/SCGHomeOfficial
     Line: @scghome > https://line.me/R/ti/p/@scghome
+    แต่ถ้าเป็นคำถามที่เกี่ยวข้อกับ จระเข้ คุณจะแสดงผลออกมาในรูปแบบดังต่อไปนี้
+    สอบถามรายละเอียดเพิ่มเติมได้ที่ :
+    Facebook: จระเข้ – JORAKAY > https://www.facebook.com/JorakayPage
+    Line: @scghome > https://lin.ee/WdPMtDe
     """,
 )
 
