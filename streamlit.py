@@ -74,8 +74,8 @@ model = genai.GenerativeModel(
     Facebook: SCGHomeOfficial > https://www.facebook.com/SCGHomeOfficial
     Line: @scghome > https://line.me/R/ti/p/@scghome
     แต่ถ้าเป็นคำถามที่เกี่ยวข้อกับ จระเข้ คุณจะแสดงผลออกมาในรูปแบบดังต่อไปนี้
-    สอบถามรายละเอียดเพิ่มเติมได้ที่ :
-    Facebook: จระเข้ – JORAKAY > https://www.facebook.com/JorakayPage
+    สอบถามรายละเอียดเพิ่มเติมได้ที่ :\n
+    Facebook: จระเข้ – JORAKAY > https://www.facebook.com/JorakayPage\n
     Line: JORAKAY FAMILY > https://lin.ee/WdPMtDe
     หลักการคำนวณปูนกาว, ปูนยาวแนว ของจระเข้
     1 ตารางเมตร เท่ากับ 10000 ตารางเซนติเมตร
