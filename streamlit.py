@@ -2,7 +2,7 @@ import os
 
 import google.generativeai as genai
 import pandas as pd
-
+import time
 import streamlit as st
 
 # Set up Google AI API key
@@ -132,19 +132,26 @@ if prompt := st.chat_input():
     st.session_state["messages"].append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
 
+    def typewriter(text, delay=0.04):
+        container = st.empty()
+        displayed_text = ""
+        for char in text:
+            displayed_text += char
+            container.markdown(displayed_text)
+            time.sleep(delay)
+            
     def generate_response():
-        # Convert messages to the required format
         history = [
             {"role": msg["role"], "parts": [{"text": msg["content"]}]}
             for msg in st.session_state["messages"]
         ]
 
-        # Add the file content to the history
         history.insert(1, {"role": "user", "parts": [{"text": file_content}]})
 
         chat_session = model.start_chat(history=history)
         response = chat_session.send_message(prompt)
         st.session_state["messages"].append({"role": "model", "content": response.text})
-        st.chat_message("model").write(response.text)
+        st.chat_message("model")
+        typewriter(response.text)
 
     generate_response()
