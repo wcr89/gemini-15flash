@@ -132,7 +132,7 @@ if prompt := st.chat_input():
     st.session_state["messages"].append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
 
-    def typewriter(text, delay=0.04):
+    def typewriter(text, delay=0.02):
         container = st.empty()
         displayed_text = ""
         for char in text:
